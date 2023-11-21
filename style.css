@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrocel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    /* background-position: center center; */
+    display: flex;
+}
+
+.imagem span{
+    margin:15%;
+    font-size: 1em;
+    
+}
+
+h1{
+    margin-left: 10em;
+    font-family: cursive;
+    font-size: 3em;
+    color: #7e0808;
+}
+
+footer{
+    margin-top: 40em;
+    margin-left: 4em;
+    text-align: center;
+    color: #7e0808;
+}
+
+
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+
+    }
+    to{
+        transform: rotateY(-360deg);
+
+    }
+}
+.imagem:nth-child(1){ 
+    background: url(https://cdn.pixabay.com/photo/2019/07/07/14/03/fiat-500-4322521_1280.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2){ 
+    background: url(https://cdn.pixabay.com/photo/2016/05/06/16/32/car-1376190_640.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){ 
+    background: url(https://cdn.pixabay.com/photo/2016/03/26/22/32/fast-1281628_1280.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){ 
+    background: url(https://cdn.pixabay.com/photo/2013/08/11/03/40/car-171422_1280.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){ 
+    background: url(https://cdn.pixabay.com/photo/2016/04/13/21/58/auto-1327801_1280.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){ 
+    background: url(https://cdn.pixabay.com/photo/2017/06/19/19/05/rally-2420637_1280.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){ 
+    background: url(https://images.unsplash.com/photo-1536909526839-8f10e29ba80c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){ 
+    background: url(https://images.unsplash.com/photo-1620057657132-e737f4983bc6?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){ 
+    background: url(https://images.unsplash.com/photo-1629583825021-9fb0d16381ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    transform: rotateY(320deg) translateZ(430px);
+}
